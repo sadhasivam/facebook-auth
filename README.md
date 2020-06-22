@@ -13,6 +13,7 @@ FaceBook Login ( basics )
     d.) Create & Edit User to setup passwords
 
 3. local environment we have to create HTTPS certificate. 
+
     ```openssl req -x509 -out localhost.crt -keyout localhost.key \\n  -newkey rsa:2048 -nodes -sha256 \\n  -subj '/CN=localhost' -extensions EXT -config <( \\n   printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")```
 
 4. Configure APP ID in the index.js file. 
