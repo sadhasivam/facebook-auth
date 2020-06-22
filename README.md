@@ -18,6 +18,13 @@ FaceBook Login ( basics )
 
 4. Configure APP ID in the index.js file. 
 
-5. Open browser for  checking
+5. Run the Facebook-Auth App
+```
+go run main.go
+```
+
+6. Open browser https://localhost/index.html.  to see FaceBook Login button 
+
+7. Note: first time please accept certificate
 
 
